@@ -477,7 +477,7 @@ protected void doRegister() throws Exception {
 }
 ```
 
-首先，`JavaChannel()`获取之前初始化完成后的JDK底层的channel。之后调用它的注册方法，其中第一个参数是`Selector`，第二个`ops`是感兴趣的操作（0表示目前不对任何时间感兴趣），第三个`Attachment`参数是this，表示的是Netty中的Channel。当`Selector`轮询到事件发生时，可以通过`Attachment`得到Netty的Channel。
+首先，`JavaChannel()`获取之前初始化完成后的JDK底层的channel。之后调用它的注册方法，其中第一个参数是`Selector`，第二个`ops`是感兴趣的操作（0表示目前不对任何事件感兴趣），第三个`Attachment`参数是this，表示的是Netty中的Channel。当`Selector`轮询到事件发生时，可以通过`Attachment`得到Netty的Channel。
 
 之后调用handler的`handlerAdded`和`channelRegistered`方法。
 
