@@ -1,12 +1,4 @@
----
-description: Netty学习笔记
----
-
-# Initial page
-
-
-
-{% page-ref page="netty-de-serverbootstrap-qi-dong-yuan-ma-fen-xi.md" %}
+# Netty学习笔记
 
 ##  2019-05-04
 
